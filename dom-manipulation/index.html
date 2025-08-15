@@ -17,7 +17,7 @@
       border: 1px solid #ddd;
       min-height: 50px;
     }
-    input {
+    input, select {
       margin: 5px;
       padding: 8px;
     }
@@ -30,6 +30,11 @@
 </head>
 <body>
   <h1>Dynamic Quote Generator</h1>
+
+  <h3>Filter by Category</h3>
+  <select id="categorySelect">
+    <option value="All">All</option>
+  </select>
 
   <div id="quoteDisplay">Click "Show New Quote" to see something inspiring!</div>
 
