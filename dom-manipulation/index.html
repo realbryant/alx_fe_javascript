@@ -24,14 +24,15 @@
     button {
       padding: 8px 15px;
       cursor: pointer;
+      margin: 5px;
     }
   </style>
 </head>
 <body>
   <h1>Dynamic Quote Generator</h1>
-  
+
   <div id="quoteDisplay">Click "Show New Quote" to see something inspiring!</div>
-  
+
   <button id="newQuote">Show New Quote</button>
 
   <h3>Add Your Own Quote</h3>
@@ -40,6 +41,10 @@
     <input id="newQuoteCategory" type="text" placeholder="Enter quote category" />
     <button id="addQuoteBtn">Add Quote</button>
   </div>
+
+  <h3>Backup / Restore Quotes</h3>
+  <button id="exportQuotes">Export Quotes as JSON</button>
+  <input type="file" id="importFile" accept=".json" onchange="importFromJsonFile(event)" />
 
   <script src="script.js"></script>
 </body>
